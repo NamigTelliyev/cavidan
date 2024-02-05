@@ -1,0 +1,77 @@
+section .container .row .col {
+  padding: 10px;
+  transition: 0.4s;
+  position: relative;
+  border: 1px solid black;
+  width: 300px;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  background-color: white;
+}
+section .container .row .col .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  transition: 0.4s;
+  background-color: rgb(21, 21, 255);
+}
+section .container .row .col i {
+  z-index: 1;
+  color: black;
+}
+section .container .row .col h2 {
+  z-index: 1;
+  color: black;
+}
+section .container .row .col p {
+  z-index: 1;
+  color: gray;
+}
+section .container .row .col button {
+  z-index: 1;
+  color: black;
+  background-color: silver;
+  width: 130px;
+  height: 40px;
+}
+section .container .row .col:hover {
+  transition: 0.4s;
+}
+section .container .row .col:hover .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(21, 21, 255);
+}
+section .container .row .col:hover i {
+  z-index: 1;
+  color: white;
+}
+section .container .row .col:hover h2 {
+  z-index: 1;
+  color: white;
+}
+section .container .row .col:hover p {
+  z-index: 1;
+  color: white;
+}
+section .container .row .col:hover button {
+  z-index: 1;
+  color: gray;
+  background-color: white;
+  width: 130px;
+  height: 40px;
+}
+section .container .row .col::before .overlay {
+  transform: scale(190deg);
+  width: 100%;
+  height: 0;
+}
